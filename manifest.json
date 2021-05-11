@@ -1,0 +1,29 @@
+{
+    "name": "Adblock",
+    "author": "AdAvoid Ltd",
+    "version": "1.0",
+    "description": "Adblocker for chrome",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+        "page": "background.html"
+    },
+
+    "icons": {
+        "32": "icons/icon.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "32": "icons/icon.png"
+        },
+        "default_title": "__MSG_name__",
+        "default_popup": "pages/popup.html"
+    },
+
+    "options_ui": {
+        "page": "pages/options.html",
+        "open_in_tab": true
+    },
+
+    "manifest_version": 2
+}
